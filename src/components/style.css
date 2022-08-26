@@ -1,0 +1,42 @@
+.calculator {
+    width: 400px;
+    height: 600px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: cornflowerblue;
+  }
+  
+  .display {
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: black;
+    box-sizing: border-box;
+    background-color: lightgrey;
+  
+  }
+  
+  .op-buttons {
+    margin-top: 2rem;
+    width: 400px;
+    height: 180px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5);
+    background-color: lightgrey;
+  }
+  
+  .nums {
+    width: 400px;
+    height: 280px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5);
+    background-color: lightgrey;
+  }
