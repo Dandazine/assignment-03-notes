@@ -16,7 +16,7 @@ function App() {
     setCalculate(calculate + value);
 
     if(!operators.includes(value)) {
-      setAnswer(eval(calculate + value).toString())
+      setAnswer(new Function("return " + calculate + value)())
     }
   }
 
@@ -31,7 +31,7 @@ function App() {
   }
 
   function giveAnswer (){
-    setCalculate(eval(calculate).toString());
+    setCalculate(new Function("return " + calculate)());
   }
 
   function deleteNumber (){
